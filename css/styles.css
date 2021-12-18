@@ -94,6 +94,22 @@ header {
 .address-mail:focus {
   color: var(--accent-color);
 }
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+.icon-envelope:hover {
+  fill: var(--accent-color);
+}
+.icon-smartphone:hover {
+  fill: var(--accent-color);
+}
 .address-phone {
   font-weight: 500;
   font-size: 14px;
@@ -110,7 +126,11 @@ header {
 /* End of header */
 /* Section Hero index */
 .hero {
-  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/herobkg.jpg);
   text-align: center;
   padding: 200px 0;
 }
@@ -154,11 +174,18 @@ header {
   margin: -1px;
 }
 .thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+.advantage-icon {
+  width: 70px;
+  height: 70px;
 }
 .section-list {
   display: flex;
@@ -223,7 +250,40 @@ img {
   text-align: center;
 }
 .team-names {
-  padding: 30px 0;
+  padding-top: 30px;
+}
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.team-social-list-item {
+  margin-right: 10px;
+}
+.team-social-list-item:last-child {
+  margin-right: 0;
+}
+.team-social-link svg {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+}
+.team-social-link:hover {
+  background-color: rgba(33, 150, 243, 1);
+}
+.team-social-link svg:hover {
+  fill: rgba(255, 255, 255, 1);
 }
 /* Footer */
 .footer {
