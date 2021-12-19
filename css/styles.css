@@ -283,19 +283,86 @@ img {
   background-color: rgba(33, 150, 243, 1);
 }
 .team-social-link svg:hover {
-  fill: rgba(255, 255, 255, 1);
+  fill: white;
 }
+/* section Our Customers */
+.customers-list {
+  display: flex;
+}
+.customers-list-item {
+  margin-right: 30px;
+}
+.customers-list-item:last-child {
+  margin-right: 0;
+}
+.customers-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.icon-group1 {
+  width: 41px;
+  height: 46.7px;
+  fill: rgba(175, 177, 184, 1);
+}
+.icon-group2 {
+  width: 40px;
+  height: 52px;
+  fill: rgba(175, 177, 184, 1);
+}
+.icon-group3 {
+  width: 43.46px;
+  height: 41.18px;
+  fill: rgba(175, 177, 184, 1);
+}
+.icon-group4 {
+  width: 84.44px;
+  height: 40.62px;
+  fill: rgba(175, 177, 184, 1);
+}
+.icon-group5 {
+  width: 62.64px;
+  height: 45.43px;
+  fill: rgba(175, 177, 184, 1);
+}
+.icon-group6 {
+  width: 93.79px;
+  height: 43.93px;
+  fill: rgba(175, 177, 184, 1);
+}
+
+.customers-list-link:hover {
+  border-color: #2196f3;
+}
+.icon-group1:hover,
+.icon-group2:hover,
+.icon-group3:hover,
+.icon-group4:hover,
+.icon-group5:hover,
+.icon-group6:hover {
+  fill: #2196f3;
+}
+
 /* Footer */
 .footer {
   background-color: #2f303a;
   padding: 60px 0;
 }
-/* .footer-container {
+.footer-container {
+  display: flex;
   width: 1230px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-} */
+  align-items: baseline;
+}
+.footbox-1 {
+  margin-left: 70px;
+}
 .footer-address-map {
   font-size: 14px;
   line-height: 1.71;
@@ -339,6 +406,44 @@ img {
 address {
   margin-top: 20px;
 }
+/* footer box social lisnks */
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-list-item {
+  margin-right: 10px;
+}
+.footer-social-list-item:last-child {
+  margin-right: 0;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 1);
+}
+.footer-social-link:hover {
+  background-color: rgba(33, 150, 243, 1);
+}
+.footer-social-link svg:hover {
+  fill: white;
+}
+.footbox-1-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14px;
+  color: #ffffff;
+}
 /* Portfolio */
 /* Filter buttons */
 .section-title-filter {
@@ -371,6 +476,10 @@ address {
 .filter-button:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
+  /* shadow-middle */
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-item {
   margin-right: 8px;
@@ -389,6 +498,9 @@ address {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+.gallery-list:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .gallery-title {
   font-weight: 700;
