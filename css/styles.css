@@ -488,6 +488,7 @@ address {
 }
 .gallery-link {
   display: block;
+  text-decoration: none;
 }
 .gallery-link:hover,
 .gallery-link:focus {
@@ -506,6 +507,7 @@ address {
 .gallery-text {
   font-size: 16px;
   line-height: 1.9;
+  color: var(--primary-text-color);
 }
 .signature {
   padding: 20px 24px;
